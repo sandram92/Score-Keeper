@@ -22,7 +22,9 @@ function updateScore(player,opponent){
           if(player.score === winningScore){
               isGameOver = true
               player.display.classList.add('green')
-              opponent.display.classList.add('red')   
+              opponent.display.classList.add('red')
+              player.button.disabled = true  
+              opponent.button.disabled =true
           }
           player.display.textContent = player.score
       }
