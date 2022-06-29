@@ -29,8 +29,7 @@ function updateScore(player,opponent){
 }
 
 p1.button.addEventListener('click', function(){
-    updateScore(p1,p2)
-    
+    updateScore(p1,p2)  
 })
 
 p2.button.addEventListener('click', function () {
@@ -45,7 +44,6 @@ function resetScores (){
         p.display.classList.remove('green', 'red')
      }    
 }
-
 gameRound.addEventListener('change', function (){
     // const value =parseInt(gameRound.options[gameRound.selectedIndex].value);
     let value = parseInt(this.value)
